@@ -65,6 +65,7 @@ const listener = () => {
 const unsubscribe = store.subscribe(listener);
 unsubscribe();
 
+// 액션 발생시키기 (DOM 이벤트 부여)
 divToggle.onclick = () => {
   store.dispatch(toggleSwitch());
 };
